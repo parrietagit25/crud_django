@@ -29,8 +29,8 @@
                         <td>{{pelicula.titulo}}</td>
                         <td><img src="{{pelicula.imagen.url}}" alt="" width="100"></td>
                         <td>{{pelicula.descripcion}}</td>
-                        <td><a name="" id="" class="btn btn-primary" href="{% url 'editar' %}" role="button">Editar</a> 
-                            <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a></td>
+                        <td><a name="" id="" class="btn btn-primary" href="{% url 'editar' pelicula.id %}" role="button">Editar</a> 
+                            <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' pelicula.id %}" role="button">Borrar</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
