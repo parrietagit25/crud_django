@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block titulo %} Editar una Pelicula {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Editar una pelicula
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Editar datos de la pelicula</h4>
+        {% include 'peliculas/formulario.html' %}
+    </div>
+    <div class="card-footer text-muted">
+       
+    </div>
+</div>
+
+{% endblock %}
